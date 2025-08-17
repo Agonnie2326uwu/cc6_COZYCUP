@@ -13,10 +13,23 @@ body {
 header {
     background-color: #f0e5e5;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 20px; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
-  
+
+
+  .vertical-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+  align-items: flex-start; 
+}
+
 
 
 nav {
@@ -26,7 +39,7 @@ nav {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 nav ul {
@@ -49,7 +62,7 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 150px 0;
-    background-image: url('hero-bg.jpg');
+    
     background-size: cover;
     color: rgb(0, 0, 0);
     background-image: url("https://i.pinimg.com/1200x/bc/bb/a6/bcbba67fd190eb2a6d0356a347f0eace.jpg");
@@ -138,4 +151,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    
 }
+
