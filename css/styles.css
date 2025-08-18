@@ -133,7 +133,7 @@ nav a:hover {
 
 .about div{
     cursor: pointer;
-     box-shadow: 0px 0px 3px rgb(14, 0, 0);
+     box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
 .about p {
@@ -158,6 +158,17 @@ nav a:hover {
     font-size: 20px;
     margin-bottom: 40px;
 }
+
+.contact p {
+    margin: 0;          
+    padding: 2px 0;     
+}
+
+.contact img {
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
 
 footer {
     background-color: #a78b7a;
