@@ -1,0 +1,99 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+
+  background: url("bg.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  background: #4b2e2e;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Menu sections */
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #c7a17a;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.menu-card {
+  width: 280px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column; /* stack image + text */
+  align-items: center;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-img {
+  width: 100%;
+  height: 280px;        /* 🔹 force square */
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  flex-shrink: 0;       /* don’t let it resize */
+}
+
+.menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* keep square, crop excess */
+  display: block;
+}
+
+
+.price {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #4b2e2e;
+}
+
+/* Footer */
+footer {
+  background: #4b2e2e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
